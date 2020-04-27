@@ -52,11 +52,16 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"\/app\/modules": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "\/build\/app\/modules",
-		"oF": 0
+	"\/favicon.png": {
+		"ft": 32768,
+		"iS": 2594,
+		"oA": 0,
+		"oAP": "\/favicon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/index.html": {
 		"cB": 0,

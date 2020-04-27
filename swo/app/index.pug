@@ -4,6 +4,8 @@ html(lang="es")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title SWO Demo
+        link(rel="icon" type="image/png" href="favicon.png")
+
         link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.2/css/bulma.min.css")
         link(rel="stylesheet", href="app/app.css")
         link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap")
@@ -14,10 +16,26 @@ html(lang="es")
                 .column.is-6
                     img(src="app/img/swo.png").lo
                 .column.is-6
-                    .login
+                    .login Iniciar sesión
         section.section
             .game
                 .game-inner
-                    iframe(src="https://academ1a.com/modules/a1-animalsounds/" style="width: 100%; height: 800px")
+                    iframe(src="https://academ1a.com/modules/a1-animalsounds")
+        mixin infocard(icon, title, text)
+            .column: .card
+                .card-content
+                    .media
+                        .media-left: ion-icon(name=icon size="large")
+                        .media-content: .title.is-4=title
+                    .content=text
         footer.section
+            .columns
+                +infocard('phone-portrait-outline', 'Multiplataforma', 'Interactivos que funcionan en ordenadores y dispositivos móviles. Con mouse, teclado y touch sin necesidad de softwares especiales.')
+                +infocard('rocket-outline', 'Intuitivo', 'Generados con las bases modernas intuitivas que los usuarios de cualquier edad saben identificar. Menos instrucciones y más usabilidad.')
+                +infocard('people-outline', 'Enfocado', 'Para cualquier grado o nivel profesional. Interactivos para niños desde los 3 años hasta para adultos con cultura digital básica.')
+            .columns
+                +infocard('happy-outline', 'Gamificación integrada', 'Todos los avances se registran y se maneja el modelo acción-reacción en cada ambiente. Todos los interactivos manejan la sensación de un videojuego.')
+                +infocard('color-wand-outline', 'Moderno y atractivo', 'Experiencias visuales que llaman la atención de los usuarios, cada una adaptada para su público meta con los elementos justos para cubrir la interacción exitosamente.')
+        script(src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js")
+
 
